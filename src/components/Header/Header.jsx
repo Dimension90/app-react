@@ -4,10 +4,14 @@ import styles from "./Header.module.css";
 import union from "../../assets/img/Union.svg";
 import search from "../../assets/img/24px.svg";
 import favorites from "../../assets/img/Union (Stroke) (Stroke).svg";
+import background from "../../assets/img/background.svg";
 
 function Header() {
   return (
     <div className={styles.header}>
+      {/* <div className={styles.background}>
+        <img src={background} />
+      </div> */}
       <div className={styles.logo}>
         <div className={styles.logoBackground}></div>
         <Link to="/">
@@ -20,14 +24,15 @@ function Header() {
         <Link to="/">кемерово</Link>
       </div>
       <div className={styles.menu}>
-        <div className={styles.searchLink}>
+        <div className={styles.searchWrapper}>
           <img src={search} alt="Поиск" className={styles.searchLogo} />
+          <Link to="/">провайдеры</Link>
         </div>
-        <Link to="/">провайдеры</Link>
         <Link to="/">рейтинг</Link>
         <Link to="/">тарифы</Link>
         <Link to="/">акции</Link>
       </div>
+
       <div className={styles.favorites}>
         <div className={styles.favoritesHeart}>
           <img
