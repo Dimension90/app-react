@@ -36,7 +36,7 @@
   background-color: #5171e0;
   position: absolute;
 
-  border-radius: 0 10px 0 0;
+  border-radius: 0 10px 10px 0;
   bottom: 0;
   left: 0;
   z-index: -1;
@@ -121,6 +121,23 @@
   grid-column: 10 / span 2;
   font-weight: 500;
   font-size: 24px;
+  position: relative;
+}
+
+.buttonSubmit a {
+  color: #ffffff;
+}
+
+.buttonSubmit::before {
+  content: "";
+  position: absolute;
+  width: 360px;
+  height: 96px;
+  background-color: #5171e0;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  border-radius: 10px 10px 10px 10px;
 }
 
 .reference {
