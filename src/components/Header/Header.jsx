@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Link from "../Link/Link";
-import { slide as Menu } from "react-burger-menu";
+import { push as Menu } from "react-burger-menu";
 
 import styles from "./Header.module.css";
 
@@ -8,6 +8,7 @@ import union from "../../assets/img/Union.svg";
 import search from "../../assets/img/24px.svg";
 import favorites from "../../assets/img/Union (Stroke) (Stroke).svg";
 import burger from "../../assets/img/burger.svg";
+import close from "../../assets/img/close.svg";
 import background from "../../assets/img/background.svg";
 
 function Header() {
@@ -63,10 +64,11 @@ function Header() {
           </Link>
         </div>
       </div>
-      <Menu
+      {/* <Menu
         isOpen={isMenuOpen}
         onClose={toggleMenu}
         customBurgerIcon={<img src={burger} alt="Burger Menu" />}
+        customCrossIcon={<img src={close} alt="Close Menu" />}
       >
         <Link to="/" onClick={toggleMenu}>
           провайдеры
@@ -89,7 +91,7 @@ function Header() {
         <Link to="/" onClick={toggleMenu} className={styles.callLink}>
           перезвоните мне
         </Link>
-      </Menu>
+      </Menu> */}
     </div>
   );
 }
