@@ -4,7 +4,7 @@
   grid-gap: 24px;
   position: fixed;
   left: 0;
-  top: 16px;
+  padding-top: 16px;
   width: 100%;
   padding: 10px;
   box-sizing: border-box;
@@ -99,4 +99,37 @@
 .favorites {
   display: flex;
   align-items: center;
+}
+
+.menu a {
+  transition: text-decoration-color 0.3s ease-out;
+  text-decoration-color: transparent;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-color: #0d214b;
+}
+
+.location a {
+  transition: text-decoration-color 0.3s ease-out;
+  text-decoration-color: transparent;
+}
+
+.location a:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-color: #0d214b;
+}
+
+.favorites a {
+  transition: text-decoration-color 0.3s ease-out;
+  text-decoration-color: transparent;
+}
+
+.favorites a:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-color: #0d214b;
 }

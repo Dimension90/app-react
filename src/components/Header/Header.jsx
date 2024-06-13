@@ -9,9 +9,6 @@ import background from "../../assets/img/background.svg";
 function Header() {
   return (
     <div className={styles.header}>
-      {/* <div className={styles.background}>
-        <img src={background} />
-      </div> */}
       <div className={styles.logo}>
         <div className={styles.logoBackground}></div>
         <Link to="/">
@@ -21,7 +18,9 @@ function Header() {
       </div>
       <div className={styles.location}>
         <img src={union} alt="Локация" className={styles.locationLogo} />
-        <Link to="/">кемерово</Link>
+        <Link to="/" className={styles.city}>
+          кемерово
+        </Link>
       </div>
       <div className={styles.menu}>
         <div className={styles.searchWrapper}>
