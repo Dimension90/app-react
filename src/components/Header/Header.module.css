@@ -4,24 +4,25 @@
   grid-gap: 24px;
   position: fixed;
   left: 0;
-  top: 16px;
+  padding-top: 16px;
   width: 100%;
   padding: 10px;
   box-sizing: border-box;
+  align-items: center;
 }
 
 .logo {
-  grid-column: span 2;
   font-size: 24px;
   font-weight: 500;
 }
 
-.logo a {
+.logo {
   color: #ffffff;
 }
 .location {
   grid-column-start: 3;
   grid-column: 3 / span 2;
+  display: flex;
 }
 
 .menu {
@@ -33,15 +34,19 @@
 
 .favorites {
   grid-column-start: 10;
+  display: flex;
+  align-items: center;
 }
 
 .phone {
-  grid-column: 11 / span 2;
+  grid-column: 11 / span 3;
+  grid-template-rows: auto auto;
+  justify-self: end;
 }
 
 .locationLogo {
-  margin-right: 12px;
-  position: relative;
+  display: flex;
+  margin-right: 8px;
 }
 
 .phoneLink {
@@ -55,16 +60,25 @@
   margin-left: 36px;
 }
 
+.searchWrapper {
+  display: flex;
+  align-items: center;
+}
+
 .searchLogo {
-  width: 24px;
+  display: flex;
+  margin-right: 8px;
 }
 
 .searchLink {
-  margin-left: 15px;
+  display: flex;
+  align-items: center;
 }
 
 .favoritesLogo {
-  margin-right: 1px;
+  display: flex;
+  grid-column-start: 10;
+  margin-right: 8px;
 }
 
 .logoBackground {
@@ -76,4 +90,63 @@
   bottom: 0;
   left: 0;
   z-index: -1;
+}
+
+.logo,
+.location,
+.menu,
+.favorites {
+  display: flex;
+  align-items: center;
+}
+
+.menu a {
+  transition: text-decoration-color 0.3s ease-out;
+  text-decoration-color: transparent;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-color: #0d214b;
+}
+
+.location a {
+  transition: text-decoration-color 0.3s ease-out;
+  text-decoration-color: transparent;
+}
+
+.location a:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-color: #0d214b;
+}
+
+.favorites a {
+  transition: text-decoration-color 0.3s ease-out;
+  text-decoration-color: transparent;
+}
+
+.favorites a:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-color: #0d214b;
+}
+
+@media (max-width: 1194px) {
+  .bm-burger-button {
+    display: block;
+  }
+
+  .header {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .logo,
+  .location,
+  .menu,
+  .favorites,
+  .phone {
+    display: none;
+  }
 }

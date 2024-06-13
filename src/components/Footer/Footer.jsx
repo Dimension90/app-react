@@ -18,19 +18,30 @@ function Footer() {
             </div>
           </Link>
         </div>
-        <div className={styles.supportContacts}>
-          <Link to="/">+7 (800) 425-19-99</Link>
+        <div className={styles.supportWidth}>
+          <div className={styles.supportContacts}>
+            <Link to="/">+7 (800) 425-19-99</Link>
+          </div>
+          <div className={styles.connectionIssues}>
+            <p>По вопросам подключения</p>
+          </div>
+          <div className={styles.phoneSupports}>
+            <Link to="/">номера технической поддержки</Link>
+            <img src={support} className={styles.supportLogo} />
+          </div>
+          <div className={styles.feedback}>
+            <Link to="/">обратная связь</Link>
+            <img src={mail} className={styles.mailLogo} />
+          </div>
         </div>
-        <div className={styles.connectionIssues}>
-          <p>По вопросам подключения</p>
+        <div className={styles.buttonSubmit}>
+          <Link to="/">отправить заявку</Link>
         </div>
-        <div className={styles.phoneSupports}>
-          <Link to="/">номера технической поддержки</Link>
-          <img src={support} className={styles.supportLogo} />
-        </div>
-        <div className={styles.feedback}>
-          <Link to="/">обратная связь</Link>
-          <img src={mail} className={styles.mailLogo} />
+        <div className={styles.reference}>
+          <p>
+            Информация на сайте носит справочный характер и не является
+            публичной офертой
+          </p>
         </div>
       </div>
       <div className={styles.footer}>

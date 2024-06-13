@@ -1,35 +1,57 @@
+import React, { useState } from "react";
 import Link from "../Link/Link";
+import { push as Menu } from "react-burger-menu";
+
 import styles from "./Header.module.css";
 
 import union from "../../assets/img/Union.svg";
 import search from "../../assets/img/24px.svg";
 import favorites from "../../assets/img/Union (Stroke) (Stroke).svg";
+import burger from "../../assets/img/burger.svg";
+import close from "../../assets/img/close.svg";
+import background from "../../assets/img/background.svg";
 
 function Header() {
+  const [isMenuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!isMenuOpen);
+  };
+
   return (
     <div className={styles.header}>
-      <div className={styles.logo}>
+      <Link to="/">
         <div className={styles.logoBackground}></div>
-        <Link to="/">
+        <div className={styles.logo}>
           все_ <br />
           тарифы
-        </Link>
-      </div>
+        </div>
+      </Link>
       <div className={styles.location}>
         <img src={union} alt="Локация" className={styles.locationLogo} />
-        <Link to="/">кемерово</Link>
+        <Link to="/" className={styles.city}>
+          кемерово
+        </Link>
       </div>
+
       <div className={styles.menu}>
-        <div className={styles.searchLink}>
+        <div className={styles.searchWrapper}>
           <img src={search} alt="Поиск" className={styles.searchLogo} />
+          <Link to="/">провайдеры</Link>
         </div>
-        <Link to="/">провайдеры</Link>
         <Link to="/">рейтинг</Link>
         <Link to="/">тарифы</Link>
         <Link to="/">акции</Link>
       </div>
+
       <div className={styles.favorites}>
-        <img src={favorites} alt="Избранное" className={styles.favoritesLogo} />
+        <div className={styles.favoritesHeart}>
+          <img
+            src={favorites}
+            alt="Избранное"
+            className={styles.favoritesLogo}
+          />
+        </div>
         <Link to="/">избранное</Link>
       </div>
       <div className={styles.phone}>
@@ -42,6 +64,34 @@ function Header() {
           </Link>
         </div>
       </div>
+      {/* <Menu
+        isOpen={isMenuOpen}
+        onClose={toggleMenu}
+        customBurgerIcon={<img src={burger} alt="Burger Menu" />}
+        customCrossIcon={<img src={close} alt="Close Menu" />}
+      >
+        <Link to="/" onClick={toggleMenu}>
+          провайдеры
+        </Link>
+        <Link to="/" onClick={toggleMenu}>
+          рейтинг
+        </Link>
+        <Link to="/" onClick={toggleMenu}>
+          тарифы
+        </Link>
+        <Link to="/" onClick={toggleMenu}>
+          акции
+        </Link>
+        <Link to="/" onClick={toggleMenu}>
+          избранное
+        </Link>
+        <Link to="/" onClick={toggleMenu}>
+          +7 (800) 425-19-99
+        </Link>
+        <Link to="/" onClick={toggleMenu} className={styles.callLink}>
+          перезвоните мне
+        </Link>
+      </Menu> */}
     </div>
   );
 }

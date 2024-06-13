@@ -1,6 +1,6 @@
 .home {
   padding: 192px 0;
-  margin-left: 34px;
+  padding-left: 34px;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
 }
