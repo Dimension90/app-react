@@ -8,6 +8,7 @@
   width: 100%;
   padding: 10px;
   box-sizing: border-box;
+  align-items: center;
 }
 
 .logo {
@@ -22,6 +23,8 @@
 .location {
   grid-column-start: 3;
   grid-column: 3 / span 2;
+  display: flex;
+  column-gap: 8px;
 }
 
 .menu {
@@ -33,15 +36,18 @@
 
 .favorites {
   grid-column-start: 10;
+  display: flex;
+  column-gap: 8px;
+  align-items: center;
 }
 
 .phone {
   grid-column: 11 / span 2;
+  margin-left: 70px;
 }
 
 .locationLogo {
-  margin-right: 12px;
-  position: relative;
+  display: flex;
 }
 
 .phoneLink {
@@ -56,15 +62,18 @@
 }
 
 .searchLogo {
-  width: 24px;
+  display: flex;
 }
 
 .searchLink {
-  margin-left: 15px;
+  display: flex;
+  margin-left: 10px;
+  align-items: center;
 }
 
 .favoritesLogo {
-  margin-right: 1px;
+  display: flex;
+  grid-column-start: 10;
 }
 
 .logoBackground {

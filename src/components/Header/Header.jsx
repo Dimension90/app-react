@@ -29,7 +29,13 @@ function Header() {
         <Link to="/">акции</Link>
       </div>
       <div className={styles.favorites}>
-        <img src={favorites} alt="Избранное" className={styles.favoritesLogo} />
+        <div className={styles.favoritesHeart}>
+          <img
+            src={favorites}
+            alt="Избранное"
+            className={styles.favoritesLogo}
+          />
+        </div>
         <Link to="/">избранное</Link>
       </div>
       <div className={styles.phone}>
