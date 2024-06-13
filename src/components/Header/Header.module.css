@@ -1,0 +1,79 @@
+.header {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 24px;
+  position: fixed;
+  left: 0;
+  top: 16px;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.logo {
+  grid-column: span 2;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.logo a {
+  color: #ffffff;
+}
+.location {
+  grid-column-start: 3;
+  grid-column: 3 / span 2;
+}
+
+.menu {
+  grid-column-start: 5;
+  grid-column: 5 / span 5;
+  display: flex;
+  column-gap: 24px;
+}
+
+.favorites {
+  grid-column-start: 10;
+}
+
+.phone {
+  grid-column: 11 / span 2;
+}
+
+.locationLogo {
+  margin-right: 12px;
+  position: relative;
+}
+
+.phoneLink {
+  font-weight: 500;
+}
+
+.callLink {
+  font-size: 14px;
+  text-decoration: underline dotted;
+  text-underline-offset: 4px;
+  margin-left: 36px;
+}
+
+.searchLogo {
+  width: 24px;
+}
+
+.searchLink {
+  margin-left: 15px;
+}
+
+.favoritesLogo {
+  margin-right: 1px;
+}
+
+.logoBackground {
+  width: 166px;
+  height: 100px;
+  background-color: #5171e0;
+  position: absolute;
+  border-radius: 0 0 10px 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}

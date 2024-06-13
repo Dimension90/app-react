@@ -1,0 +1,25 @@
+.footer {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  margin-bottom: 22px;
+  margin-left: 48px;
+  grid-gap: 32px;
+}
+
+.textFooter {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  grid-column-start: 1;
+  grid-column-end: 8;
+  font-size: 14px;
+  font-weight: 400;
+  color: #0d214b;
+}
+
+.imgFooter {
+  grid-column-start: 8;
+}
+.imgFooter img:first-child {
+  margin-right: 27px;
+}

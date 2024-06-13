@@ -1,0 +1,57 @@
+.home {
+  padding: 192px 0;
+  margin-left: 34px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.title {
+  font-size: 64px;
+  font-weight: 500;
+  grid-column-start: 1;
+  grid-column: 1 / span 6;
+  display: flex;
+  color: #0d214b;
+}
+
+.description {
+  grid-column-start: 1;
+  grid-column: 1 / span 3;
+  margin-top: 16px;
+  color: #0d214b;
+  font-size: 24px;
+  font-weight: 500;
+  text-decoration: none;
+  text-decoration: underline dotted;
+  text-underline-offset: 6px;
+}
+
+.location {
+  margin-right: 5px;
+}
+
+a {
+  color: #0d214b;
+}
+
+.getLocation {
+  grid-column-start: 1;
+  grid-column: 1 / span 4;
+  margin-top: 32px;
+  font-weight: 400;
+  color: #0d214b;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.dotLocation {
+  text-decoration: none;
+  text-decoration: underline dotted;
+  text-underline-offset: 6px;
+}
+
+.getLocation p {
+  margin-left: 4px;
+  opacity: 40%;
+}

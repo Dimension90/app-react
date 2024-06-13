@@ -1,0 +1,79 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  margin-bottom: 19px;
+}
+
+.logoBackground {
+  width: 166px;
+  height: 100px;
+  background-color: #5171e0;
+  position: absolute;
+  border-radius: 0 10px 0 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.logo {
+  grid-column: span 2;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.textLogo {
+  margin-left: 20px;
+  margin-bottom: 16px;
+}
+
+.logo a {
+  color: #ffffff;
+}
+
+.supportContacts {
+  grid-column-start: 4;
+  grid-column: 4 / span 6;
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.connectionIssues {
+  grid-column-start: 4;
+  grid-column: 4 / span 6;
+  color: #0d214b;
+}
+
+.phoneSupports {
+  grid-column-start: 4;
+  grid-column: 4 / span 7;
+  font-size: 24px;
+  font-weight: 500;
+  text-underline-offset: 6px;
+  text-decoration-color: #5171e0;
+}
+
+.phoneSupports a {
+  color: #5171e0;
+}
+
+.feedback {
+  grid-column-start: 4;
+  grid-column: 4 / span 7;
+  font-size: 24px;
+  font-weight: 500;
+  text-decoration: underline;
+  text-underline-offset: 6px;
+  text-decoration-color: #5171e0;
+}
+
+.feedback a {
+  color: #5171e0;
+}
+
+.mailLogo {
+  margin-left: 8px;
+}
+
+.supportLogo {
+  margin-left: 8px;
+}

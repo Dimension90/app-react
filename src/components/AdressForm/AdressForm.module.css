@@ -1,0 +1,45 @@
+.adress-form {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.adress-form__item {
+  padding: 10px;
+  border-right: 1px solid #ccc;
+}
+
+.adress-form__item:last-child {
+  border-right: none;
+}
+
+.adress-form__label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.adress-form__input {
+  width: 100%;
+  padding: 6px;
+  font-size: 14px;
+  border: none;
+}
+
+.adress-form__button {
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.adress-form__button:hover {
+  background-color: #0069d9;
+}
