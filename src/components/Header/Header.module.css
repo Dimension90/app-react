@@ -12,12 +12,11 @@
 }
 
 .logo {
-  grid-column: span 2;
   font-size: 24px;
   font-weight: 500;
 }
 
-.logo a {
+.logo {
   color: #ffffff;
 }
 .location {
@@ -132,4 +131,22 @@
   text-decoration: underline;
   text-underline-offset: 4px;
   text-decoration-color: #0d214b;
+}
+
+@media (max-width: 1194px) {
+  .bm-burger-button {
+    display: block;
+  }
+
+  .header {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .logo,
+  .location,
+  .menu,
+  .favorites,
+  .phone {
+    display: none;
+  }
 }
