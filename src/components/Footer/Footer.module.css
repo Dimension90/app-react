@@ -18,6 +18,8 @@
 }
 
 .imgFooter {
+  display: flex;
+  align-items: center;
   grid-column-start: 8;
 }
 .imgFooter img:first-child {
@@ -28,32 +30,39 @@
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   margin-bottom: 19px;
+  position: relative;
 }
 
 .logoBackground {
-  width: 166px;
-  height: 100px;
+  width: 260px;
+  height: 140px;
   background-color: #5171e0;
   position: absolute;
-
-  border-radius: 0 10px 10px 0;
+  border-radius: 0 50px 1px 0;
   bottom: 0;
   left: 0;
   z-index: -1;
 }
 
-.logo {
-  grid-column: span 2;
-  font-size: 24px;
-  font-weight: 500;
+.logoBackground:after {
+  content: "";
+  position: absolute;
+  border-bottom: 1px solid #5171e0;
+  width: 119vw;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  left: -310px;
 }
 
 .textLogo {
   margin-left: 20px;
-  margin-bottom: 16px;
-}
-
-.logo a {
+  grid-column: 1 / span 2;
+  font-size: 32px;
+  font-weight: 500;
+  position: relative;
+  top: 220px;
+  z-index: 1;
   color: #ffffff;
 }
 
@@ -85,7 +94,6 @@
 
 .phoneSupports a {
   color: #5171e0;
-  text-decoration: none;
 }
 
 .feedback {
@@ -112,32 +120,44 @@
 }
 
 .supportWidth {
+  grid-row: auto;
   grid-column-start: 4;
   grid-column: 4 / span 4;
 }
 
 .buttonSubmit {
   grid-column-start: 10;
+  grid-row: auto;
   grid-column: 10 / span 2;
   font-weight: 500;
   font-size: 24px;
   position: relative;
+  padding-top: 32px;
+  padding-left: 32px;
 }
 
 .buttonSubmit a {
   color: #ffffff;
 }
 
+.arrow {
+  grid-column-start: 12;
+  grid-column: 12 / span 1;
+  margin-top: 35px;
+  margin-left: 60px;
+  grid-row: auto;
+}
+
 .buttonSubmit::before {
   content: "";
   position: absolute;
-  width: 360px;
+  width: 370px;
   height: 96px;
   background-color: #5171e0;
   top: 0;
   left: 0;
   z-index: -1;
-  border-radius: 10px 10px 10px 10px;
+  border-radius: 10px 10px 50px 10px;
 }
 
 .reference {
@@ -145,5 +165,23 @@
   grid-column: 10 / span 3;
   font-weight: 400;
   font-size: 14px;
+  position: relative;
+  top: -184px;
+  height: 20px;
+  grid-row: auto;
+}
+
+.makeLogo {
+  grid-column-start: 11;
+  grid-column-start: 11 / span 2;
+  width: 32px;
+  height: 32px;
   display: flex;
+  align-items: center;
+}
+
+.makeLogo a {
+  font-size: 14px;
+  font-weight: 400;
+  margin-left: 20px;
 }
