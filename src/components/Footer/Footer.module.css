@@ -134,18 +134,20 @@
   position: relative;
   padding-top: 32px;
   padding-left: 32px;
-}
-
-.buttonSubmit a {
   color: #ffffff;
+  display: flex;
+  white-space: nowrap;
 }
 
 .arrow {
   grid-column-start: 12;
   grid-column: 12 / span 1;
-  margin-top: 35px;
-  margin-left: 60px;
+  width: 32px;
+  height: 32px;
+  position: relative;
   grid-row: auto;
+  margin-left: 56px;
+  margin-top: 5px;
 }
 
 .buttonSubmit::before {
@@ -178,10 +180,13 @@
   height: 32px;
   display: flex;
   align-items: center;
+  width: 80px;
+  gap: 12px;
 }
 
 .makeLogo a {
   font-size: 14px;
   font-weight: 400;
-  margin-left: 20px;
+  white-space: nowrap;
+  grid-template-rows: auto auto;
 }

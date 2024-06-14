@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "react-tabs/style/react-tabs.css";
 
 import styles from "../AdressForm/AdressForm.module.css";
@@ -10,7 +11,6 @@ function AdressForm() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log(`Street: ${street}, House: ${house}, Building: ${building}`);
   };
 
   return (
@@ -62,9 +62,9 @@ function AdressForm() {
         </select>
       </div>
 
-      <button type="submit" className={styles.button}>
-        Найти провайдера
-      </button>
+      <Link to="/" className={styles.linkButton}>
+        найти провайдеров
+      </Link>
     </form>
   );
 }

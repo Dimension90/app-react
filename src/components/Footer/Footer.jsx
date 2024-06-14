@@ -36,12 +36,12 @@ function Footer() {
             <img src={mail} className={styles.mailLogo} />
           </div>
         </div>
-        <div className={styles.buttonSubmit}>
-          <Link to="/">отправить заявку</Link>
-        </div>
-        <div className={styles.arrow}>
-          <img src={arrow} />
-        </div>
+        <Link to="/" className={styles.buttonSubmit}>
+          отправить заявку
+          <div className={styles.arrow}>
+            <img src={arrow} />
+          </div>
+        </Link>
         <div className={styles.reference}>
           <p>
             Информация на сайте носит справочный характер и не является

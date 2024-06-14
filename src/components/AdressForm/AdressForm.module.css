@@ -1,45 +1,50 @@
-.adress-form {
-  display: flex;
-  align-items: center;
-  border: 1px solid #ccc;
+.form {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-start: 1;
+  grid-column: 1 / span 12;
+  border: 1px solid #5171e0;
   border-radius: 4px;
   overflow: hidden;
+  padding-left: 32px;
+  position: relative;
+  bottom: 170px;
+  left: 32px;
 }
 
-.adress-form__item {
+.item {
   padding: 10px;
   border-right: 1px solid #ccc;
 }
 
-.adress-form__item:last-child {
+.item:last-child {
   border-right: none;
 }
 
-.adress-form__label {
+.label {
   display: block;
   margin-bottom: 5px;
   font-size: 14px;
   font-weight: bold;
 }
 
-.adress-form__input {
+.input {
   width: 100%;
   padding: 6px;
   font-size: 14px;
   border: none;
 }
 
-.adress-form__button {
+.linkButton {
   padding: 10px 20px;
-  font-size: 14px;
-  font-weight: bold;
+  font-size: 24px;
+  font-weight: 500;
   color: #fff;
-  background-color: #007bff;
+  background-color: #5171e0;
   border: none;
   border-radius: 0;
   cursor: pointer;
-}
-
-.adress-form__button:hover {
-  background-color: #0069d9;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
 }
