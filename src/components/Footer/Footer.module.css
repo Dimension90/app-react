@@ -31,6 +31,7 @@
   grid-template-columns: repeat(12, 1fr);
   margin-bottom: 19px;
   position: relative;
+  overflow-x: hidden;
 }
 
 .logoBackground {
@@ -44,15 +45,15 @@
   z-index: -1;
 }
 
-.logoBackground:after {
+.logoBackground:before {
   content: "";
   position: absolute;
   border-bottom: 1px solid #5171e0;
-  width: 119vw;
+  width: 100vw;
   right: 0;
   bottom: 0;
   z-index: -1;
-  left: -310px;
+  left: 0;
 }
 
 .textLogo {

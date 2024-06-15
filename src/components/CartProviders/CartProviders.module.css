@@ -1,0 +1,97 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  margin: 0 32px;
+}
+
+.allProviders {
+  grid-column: 1 / span 4;
+  font-weight: 500;
+  font-size: 64px;
+  color: rgba(13, 33, 75, 1);
+}
+
+.cityProviders {
+  grid-column: 1 / span 3;
+  color: rgba(81, 113, 224, 1);
+  font-weight: 500;
+  font-size: 64px;
+  border: 0;
+  gap: 10px;
+  position: relative;
+  right: 2px;
+  text-decoration: underline dotted;
+  text-underline-offset: 10px;
+}
+
+.cityProviders:focus {
+  outline: none;
+}
+
+.card {
+  grid-column: 1 / span 3;
+  width: 408px;
+  height: 520px;
+  background-color: rgba(81, 113, 224, 1);
+  border-radius: 5px 5px 50px 30px;
+  margin-top: 48px;
+  z-index: -1;
+}
+
+.textLogo {
+  color: rgba(255, 255, 255, 1);
+  font-size: 32px;
+  font-weight: 500;
+  margin: 16px 0 0 16px;
+}
+
+.textCart {
+  color: rgba(255, 255, 255, 1);
+  font-size: 16px;
+  font-weight: 400;
+  margin: 32px 0 0 16px;
+}
+
+.textCart::after {
+  content: "";
+  display: block;
+  height: 1px;
+  position: relative;
+  background-color: rgba(255, 255, 255, 1);
+  right: 16px;
+  width: 110%;
+  bottom: -15px;
+  opacity: 20%;
+}
+
+.textBestProvider {
+  font-weight: 500;
+  font-size: 32px;
+  color: rgba(255, 255, 255, 1);
+  margin-top: 88px;
+  margin-left: 55px;
+  position: relative;
+}
+
+.phoneText {
+  color: rgba(255, 255, 255, 1);
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 100px;
+  margin-left: 16px;
+  grid-column: 1 / span 2;
+  display: flex;
+  align-items: center;
+  pointer-events: none;
+}
+
+.logoWrapper {
+  grid-column: 3 / span 1;
+  display: flex;
+  align-items: center;
+  margin-left: 105px;
+}
+
+.logo img {
+  margin-right: 24px;
+}
