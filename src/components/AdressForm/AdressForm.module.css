@@ -121,7 +121,7 @@
 .confirmInfo {
   grid-column: 10 / span 2;
   grid-row-start: -1;
-  margin-top: 50px;
+  margin-top: 60px;
 }
 
 .marquee {

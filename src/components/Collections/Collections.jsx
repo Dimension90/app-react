@@ -10,14 +10,17 @@ function Collections() {
         <img src={collectionsImage} />
       </div>
       <div className={styles.rateMonthlyWrapper}>
-        <div className={styles.rateMonthly}>🥇тарифы месяца</div>{" "}
-        <div className={styles.theMost}>🤑самые доступные</div>{" "}
-        <div className={styles.noLags}>🦅 без лагов</div>{" "}
+        <div className={styles.rateMonthly}>🥇тарифы месяца</div>
+        <div className={styles.theMost}>🤑самые доступные</div>
+        <div className={styles.noLags}>🦅 без лагов</div>
         <div className={styles.noLagsDescription}>
           глаз орла, реакция мангуста и быстрый <br /> интернет — в подборке
           игровых тарифов
         </div>
-        <div className={styles.kventi}>🎥 квент-и-и-ин та-ра-ра-нтино</div>{" "}
+        <div className={styles.kventi}>🎥 квент-и-и-ин та-ра-ра-нтино</div>
+      </div>
+      <div className={styles.submitApplication}>
+        <div className={styles.backgroundSubmit}></div>
       </div>
     </div>
   );
