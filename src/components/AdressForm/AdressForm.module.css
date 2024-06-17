@@ -69,7 +69,8 @@
   font-size: 24px;
   font-weight: 500;
   color: #fff;
-  background-color: #5171e0;
+  background: linear-gradient(90deg, #5171e0 -1.92%, #68d4d4 121.15%);
+
   border: none;
   border-radius: 0;
   cursor: pointer;

@@ -3,6 +3,9 @@ import { Link } from "react-router-dom";
 import "react-tabs/style/react-tabs.css";
 import arrow from "../../assets/img/arrow.svg";
 
+import { Splide, SplideSlide } from "@splidejs/react-splide";
+import "@splidejs/react-splide/css";
+
 import styles from "../AdressForm/AdressForm.module.css";
 
 function AdressForm() {
@@ -80,6 +83,7 @@ function AdressForm() {
         <div className={styles.confirmInfo}>
           <p>нажимая на поиск я соглашаюсь с обработки персональных данных</p>
         </div>
+
         <div className={styles.marquee}>быстро_честно_бесплатно</div>
       </div>
     </>
