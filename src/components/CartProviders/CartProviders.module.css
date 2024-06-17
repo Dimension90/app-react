@@ -254,3 +254,9 @@
   bottom: 17px;
   color: rgba(13, 33, 75, 0.4);
 }
+
+.cardProviders {
+  position: relative;
+  right: 385px;
+  margin-bottom: 100px;
+}

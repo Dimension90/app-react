@@ -22,8 +22,12 @@
   align-items: center;
   grid-column-start: 8;
 }
-.imgFooter img:first-child {
+
+.imgFooter a {
   margin-right: 27px;
+}
+.imgFooter img:last-child {
+  margin: 0 auto;
 }
 
 .wrapper {
@@ -165,6 +169,7 @@
 
 .reference {
   grid-column-start: 10;
+  height: 96px;
   grid-column: 10 / span 3;
   font-weight: 400;
   font-size: 14px;

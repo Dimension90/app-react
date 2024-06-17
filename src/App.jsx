@@ -3,6 +3,7 @@ import Home from "./components/Home/Home";
 import Footer from "./components/Footer/Footer";
 import AdressForm from "./components/AdressForm/AdressForm";
 import CartProviders from "./components/CartProviders/CartProviders";
+import Collections from "./components/Collections/Collections";
 
 import backgroundImage from "./assets/img/background.svg";
 
@@ -15,6 +16,7 @@ function App() {
       <Home />
       <AdressForm />
       <CartProviders />
+      <Collections />
       <Footer />
     </>
   );
