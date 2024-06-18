@@ -1,21 +1,19 @@
 .wrapper {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  margin: 0 32px;
   row-gap: 32px;
+  margin: 32px 32px;
 }
 
 .backgroundForm {
   grid-column: 1 / span 12;
-  width: 1460px;
-  height: 568px;
+  height: 752px;
   background-color: rgba(81, 113, 224, 1);
-  border-radius: 50px 50px 50px 50px;
+  border-radius: 50px;
   margin-top: 20px;
-  justify-self: start;
   z-index: -1;
   margin-bottom: 40px;
-  grid-column-end: 12;
+  padding: 0 32px;
 }
 
 .textForm {
@@ -29,25 +27,29 @@
 .form {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-column: 1 / span 12;
+  grid-column: 1 / span 6;
   border: 1px solid #5171e0;
   border-radius: 4px 4px 50px 4px;
   position: relative;
-  bottom: 170px;
+  bottom: 252px;
   height: 96px;
   margin: 0 32px;
 }
 
-.firstName {
-  grid-column-start: 1;
-  grid-column: 1 / span 4;
-  padding: 10px;
-  border-right: 1px solid #5171e0;
-}
-
-.label {
-  display: block;
-  margin-bottom: 16px;
+.findProviders {
+  grid-column: 4 / span 3;
+  font-size: 24px;
+  font-weight: 500;
+  background: #ffffff;
+  color: #5171e0;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+  display: flex;
+  white-space: nowrap;
+  justify-content: center;
+  width: 100%;
+  border-radius: 0 0 50px 0;
 }
 
 .input {
@@ -59,35 +61,35 @@
   font-weight: 400;
   display: flex;
   align-items: center;
-  color: rgba(13, 33, 75, 1);
+  background-color: #5171e0;
+  color: rgba(255, 255, 255, 1);
+}
+
+.input::placeholder {
+  color: #fff;
+  opacity: 40%;
 }
 
 .name {
-  grid-column: 1 / span 4;
+  grid-column: 1 / span 12;
   padding: 10px;
-  border-right: 1px solid #5171e0;
+  border: 1px solid #ffffff;
+  border-radius: 8px 8px 0px 0px;
+  border-bottom: none;
 }
 
 .phone {
-  grid-column: 5 / span 5;
+  grid-column: 1 / span 6;
   padding: 10px;
-  border-right: 1px solid #5171e0;
+  border: 1px solid #ffffff;
+  border-right: none;
 }
 
 .findProviders {
-  grid-column: 10 / span 2;
-  font-size: 24px;
-  font-weight: 500;
-  color: #fff;
-  background: #ffffff;
-  border: none;
-  border-radius: 0;
-  cursor: pointer;
-  display: flex;
-  white-space: nowrap;
-  justify-content: center;
-  width: 100%;
-  border-radius: 0 0 50px 0;
+  grid-column: 7 / span 6;
+  padding: 10px;
+  border: 1px solid #ffffff;
+  border-left: none;
 }
 
 .buttonText {

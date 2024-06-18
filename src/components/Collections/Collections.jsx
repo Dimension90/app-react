@@ -1,5 +1,5 @@
 import styles from "../Collections/Collections.module.css";
-import AccordionComponent from "./Accordion";
+import AccordionComponent from "../Accordion/Accordion";
 import collectionsImage from "../../assets/img/collections.webp";
 
 function Collections() {

@@ -12,6 +12,9 @@
   align-items: center;
   grid-column-start: 1;
   grid-column-end: 8;
+}
+
+.textFooter a {
   font-size: 14px;
   font-weight: 400;
   color: #0d214b;

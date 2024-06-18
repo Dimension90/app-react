@@ -1,5 +1,5 @@
 import React from "react";
-import Slider from "../CartProviders/Slider";
+import Slider from "../Slider/Slider";
 
 import { Link } from "react-router-dom";
 import tgLogo from "../../assets/img/tgLogoCard.svg";

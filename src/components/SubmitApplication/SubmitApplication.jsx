@@ -19,24 +19,20 @@ function SubmitApplication() {
       </div>
       <form onSubmit={handleSubmit} className={styles.form}>
         <div className={styles.name}>
-          <label htmlFor="name" className={styles.label}>
-            как вас зовут?
-          </label>
           <input
             type="text"
             id="name"
+            placeholder="как вас зовут?"
             value={name}
             onChange={(event) => setName(event.target.value)}
             className={styles.input}
           />
         </div>
         <div className={styles.phone}>
-          <label htmlFor="phone" className={styles.label}>
-            +7 (999) 351-13-12
-          </label>
           <input
             type="tel"
             id="phone"
+            placeholder="+7 (999) 351-13-12"
             value={phone}
             onChange={(event) => setPhone(event.target.value)}
             className={styles.input}
