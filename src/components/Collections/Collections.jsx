@@ -1,6 +1,6 @@
 import styles from "../Collections/Collections.module.css";
 import AccordionComponent from "./Accordion";
-import collectionsImage from "../../assets/img/collections.svg";
+import collectionsImage from "../../assets/img/collections.webp";
 
 function Collections() {
   const items = [
@@ -56,6 +56,7 @@ function Collections() {
         <img src={collectionsImage} />
       </div>
       <AccordionComponent items={items} />
+      <div className={styles.backgroundForm}></div>
     </div>
   );
 }

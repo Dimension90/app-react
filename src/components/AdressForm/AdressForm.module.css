@@ -69,7 +69,7 @@
   font-size: 24px;
   font-weight: 500;
   color: #fff;
-  background: linear-gradient(90deg, #5171e0 -1.92%, #68d4d4 121.15%);
+  background: #5171e0;
 
   border: none;
   border-radius: 0;
@@ -124,18 +124,60 @@
   margin-top: 60px;
 }
 
-.marquee {
+.marqueeText {
+  font-weight: 500;
   position: absolute;
   left: 0;
-  margin-top: 200px;
-  font-weight: 500;
   font-size: 120px;
+  margin-top: 200px;
   color: rgba(81, 113, 224, 1);
   white-space: nowrap;
-  will-change: transform;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  margin-left: 0;
+  overflow: hidden;
+  margin-right: 0;
   animation: marquee 10s linear infinite;
 }
-/* 
+
+.splide__arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.splide__arrow::before {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  border-left: 2px solid #333;
+  border-bottom: 2px solid #333;
+  transform: rotate(-45deg);
+}
+
+.splide__arrow.splide__arrow--prev {
+  left: 20px;
+}
+
+.splide__arrow.splide__arrow--next {
+  right: 20px;
+}
+
+.splide__arrow.splide__arrow--disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
 @keyframes marquee {
   0% {
     transform: translateX(100%);
@@ -146,10 +188,4 @@
   100% {
     transform: translateX(-100%);
   }
-} */
-
-.marquee span {
-  display: inline-block;
-  width: 33.3333%;
-  text-align: center;
 }

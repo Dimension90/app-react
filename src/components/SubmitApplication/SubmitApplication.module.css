@@ -1,0 +1,98 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  margin: 0 32px;
+  row-gap: 32px;
+}
+
+.backgroundForm {
+  grid-column: 1 / span 12;
+  width: 1460px;
+  height: 568px;
+  background-color: rgba(81, 113, 224, 1);
+  border-radius: 50px 50px 50px 50px;
+  margin-top: 20px;
+  justify-self: start;
+  z-index: -1;
+  margin-bottom: 40px;
+  grid-column-end: 12;
+}
+
+.textForm {
+  font-weight: 500;
+  margin-top: 88px;
+  margin-left: 48px;
+  font-size: 48px;
+  color: #ffffff;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column: 1 / span 12;
+  border: 1px solid #5171e0;
+  border-radius: 4px 4px 50px 4px;
+  position: relative;
+  bottom: 170px;
+  height: 96px;
+  margin: 0 32px;
+}
+
+.firstName {
+  grid-column-start: 1;
+  grid-column: 1 / span 4;
+  padding: 10px;
+  border-right: 1px solid #5171e0;
+}
+
+.label {
+  display: block;
+  margin-bottom: 16px;
+}
+
+.input {
+  width: 100%;
+  padding: 6px;
+  font-size: 14px;
+  border: none;
+  font-size: 24px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  color: rgba(13, 33, 75, 1);
+}
+
+.name {
+  grid-column: 1 / span 4;
+  padding: 10px;
+  border-right: 1px solid #5171e0;
+}
+
+.phone {
+  grid-column: 5 / span 5;
+  padding: 10px;
+  border-right: 1px solid #5171e0;
+}
+
+.findProviders {
+  grid-column: 10 / span 2;
+  font-size: 24px;
+  font-weight: 500;
+  color: #fff;
+  background: #ffffff;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+  display: flex;
+  white-space: nowrap;
+  justify-content: center;
+  width: 100%;
+  border-radius: 0 0 50px 0;
+}
+
+.buttonText {
+  margin-top: 30px;
+  font-weight: 500;
+  font-size: 24px;
+  color: #5171e0;
+}

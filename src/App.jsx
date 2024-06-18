@@ -4,6 +4,7 @@ import Footer from "./components/Footer/Footer";
 import AdressForm from "./components/AdressForm/AdressForm";
 import CartProviders from "./components/CartProviders/CartProviders";
 import Collections from "./components/Collections/Collections";
+import SubmitApplication from "./components/SubmitApplication/SubmitApplication";
 
 import backgroundImage from "./assets/img/background.svg";
 
@@ -17,6 +18,7 @@ function App() {
       <AdressForm />
       <CartProviders />
       <Collections />
+      <SubmitApplication />
       <Footer />
     </>
   );
