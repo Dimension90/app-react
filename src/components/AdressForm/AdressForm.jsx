@@ -1,11 +1,9 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import Marquee from "react-fast-marquee";
+
 import "react-tabs/style/react-tabs.css";
 import arrow from "../../assets/img/arrow.svg";
-
-import { Splide, SplideSlide } from "@splidejs/react-splide";
-import "@splidejs/react-splide/css";
-
 import styles from "../AdressForm/AdressForm.module.css";
 
 function AdressForm() {
@@ -83,8 +81,15 @@ function AdressForm() {
         <div className={styles.confirmInfo}>
           <p>нажимая на поиск я соглашаюсь с обработки персональных данных</p>
         </div>
-
-        <div className={styles.marquee}>быстро_честно_бесплатно</div>
+        <Marquee
+          direction="left"
+          gradient={false}
+          speed={50}
+          delay={0}
+          play={true}
+        >
+          <div className={styles.marquee}>быстро_честно_бесплатно</div>
+        </Marquee>
       </div>
     </>
   );

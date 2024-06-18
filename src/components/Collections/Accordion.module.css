@@ -1,0 +1,38 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 32px;
+}
+
+.wrapperImage {
+  grid-column: 1 / span 6;
+}
+
+.accordion {
+  grid-column: 8 / span 5;
+}
+
+.accordionItem {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.accordionHeader {
+  height: 60px;
+  background-color: #f5f5f5;
+  font-weight: 500;
+  font-size: 32px;
+  color: #0d214b;
+  padding: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.accordionHeader:hover {
+  background-color: #e0e0e0;
+}
+
+.accordionContent {
+  padding: 8px;
+}

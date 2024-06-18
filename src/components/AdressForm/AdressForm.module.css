@@ -135,8 +135,8 @@
   will-change: transform;
   animation: marquee 10s linear infinite;
 }
-
-/* @keyframes marquee {
+/* 
+@keyframes marquee {
   0% {
     transform: translateX(100%);
   }
@@ -147,3 +147,9 @@
     transform: translateX(-100%);
   }
 } */
+
+.marquee span {
+  display: inline-block;
+  width: 33.3333%;
+  text-align: center;
+}
