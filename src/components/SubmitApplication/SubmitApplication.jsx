@@ -1,4 +1,7 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
+
+import blueArrow from "../../assets/img/blueArrow.svg";
 
 import styles from "../SubmitApplication/SubmitApplication.module.css";
 
@@ -40,8 +43,24 @@ function SubmitApplication() {
         </div>
         <button type="submit" className={styles.findProviders}>
           <div className={styles.buttonText}>найти провайдеров</div>
+          <div className={styles.arrowButton}>
+            <img src={blueArrow} />
+          </div>
         </button>
+        <div className={styles.description}>
+          нажимая на поиск я соглашаюсь с{" "}
+          <ul>
+            {" "}
+            <Link to="/">условиями</Link>
+          </ul>{" "}
+          обработки персональных данных
+        </div>
       </form>
+      <div className={styles.call}>
+        или позвоните <br />
+        <tel>+7 (800) 425-19-99</tel> закажите обратный звонок напишите в{" "}
+        <Link to="/">вк</Link> или <Link to="/">телеграм</Link>
+      </div>
     </div>
   );
 }

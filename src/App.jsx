@@ -9,6 +9,7 @@ import SubmitApplication from "./components/SubmitApplication/SubmitApplication"
 import backgroundImage from "./assets/img/background.svg";
 
 import styles from "./App.module.css";
+import ConnectSection from "./components/ConnectSection/ConnectSection";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <CartProviders />
       <Collections />
       <SubmitApplication />
+      <ConnectSection />
       <Footer />
     </>
   );
