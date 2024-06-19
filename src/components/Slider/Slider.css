@@ -1,0 +1,26 @@
+.splide__arrows {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 80%;
+  transform: translateX(-50%);
+}
+
+.splide__arrow--prev {
+  position: relative;
+  background-color: #5171e0;
+  width: 64px;
+  height: 64px;
+  left: 0;
+  top: 0;
+}
+
+.splide__arrow--next {
+  background-color: #5171e0;
+  position: relative;
+  width: 64px;
+  height: 64px;
+  left: 0;
+  top: 0;
+}

@@ -1,5 +1,9 @@
 import React from "react";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
+
+import NextArrow from "../Slider/Arrows/NextArrow";
+import PrevArrow from "../Slider/Arrows/PrevArrow";
+
 import "@splidejs/react-splide/css";
 
 import rostelecom from "../../assets/img/rostelecom.svg";
@@ -9,6 +13,7 @@ import goodline from "../../assets/img/goodline.svg";
 import ttk from "../../assets/img/ttk.svg";
 import megafon from "../../assets/img/megafon.svg";
 
+import "../Slider/Slider.css";
 import styles from "../CartProviders/CartProviders.module.css";
 
 function Slider() {
@@ -17,11 +22,13 @@ function Slider() {
       <Splide
         options={{
           rewind: true,
+          arrows: true,
           perPage: 3,
           gap: "0",
           width: 1224,
           pagination: false,
-          arrows: true,
+          prev: "<PrevArrow />",
+          next: "<NextArrow />",
         }}
       >
         <SplideSlide>
@@ -189,10 +196,6 @@ function Slider() {
           </div>
         </SplideSlide>
       </Splide>
-      <div className={styles.arrows}>
-        <div className={styles.arrowPrev}></div>
-        <div className={styles.arrowNext}></div>
-      </div>
     </div>
   );
 }
