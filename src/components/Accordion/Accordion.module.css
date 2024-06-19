@@ -4,12 +4,8 @@
   grid-column-gap: 32px;
 }
 
-.wrapperImage {
-  grid-column: 1 / span 6;
-}
-
 .accordion {
-  grid-column: 7 / span 6;
+  grid-column: 3 / span 12;
 }
 
 .accordionItem {
