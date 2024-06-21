@@ -106,3 +106,12 @@
 .call a {
   color: #0d214b;
 }
+
+.call:before {
+  content: "";
+  position: absolute;
+  margin-top: 110px;
+  left: 0;
+  border-bottom: 1px solid #5171e0;
+  width: 100vw;
+}

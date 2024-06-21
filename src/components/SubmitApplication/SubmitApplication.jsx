@@ -58,7 +58,7 @@ function SubmitApplication() {
       </form>
       <div className={styles.call}>
         или позвоните <br />
-        <tel>+7 (800) 425-19-99</tel> закажите обратный звонок напишите в{" "}
+        <div>+7 (800) 425-19-99</div> закажите обратный звонок напишите в{" "}
         <Link to="/">вк</Link> или <Link to="/">телеграм</Link>
       </div>
     </div>

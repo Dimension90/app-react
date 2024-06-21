@@ -5,11 +5,12 @@ import AdressForm from "./components/AdressForm/AdressForm";
 import CartProviders from "./components/CartProviders/CartProviders";
 import Collections from "./components/Collections/Collections";
 import SubmitApplication from "./components/SubmitApplication/SubmitApplication";
+import ConnectSection from "./components/ConnectSection/ConnectSection";
+import Faq from "./components/Faq/Faq";
 
 import backgroundImage from "./assets/img/background.svg";
 
 import styles from "./App.module.css";
-import ConnectSection from "./components/ConnectSection/ConnectSection";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <Collections />
       <SubmitApplication />
       <ConnectSection />
+      <Faq />
       <Footer />
     </>
   );
