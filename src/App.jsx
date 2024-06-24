@@ -7,6 +7,7 @@ import Collections from "./components/Collections/Collections";
 import SubmitApplication from "./components/SubmitApplication/SubmitApplication";
 import ConnectSection from "./components/ConnectSection/ConnectSection";
 import Faq from "./components/Faq/Faq";
+import QuestionForm from "./components/QuestionForm/QuestionForm";
 
 import backgroundImage from "./assets/img/background.svg";
 
@@ -23,6 +24,7 @@ function App() {
       <SubmitApplication />
       <ConnectSection />
       <Faq />
+      <QuestionForm />
       <Footer />
     </>
   );
