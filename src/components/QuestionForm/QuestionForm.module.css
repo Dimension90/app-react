@@ -1,0 +1,98 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  row-gap: 32px;
+  grid-column-gap: 32px;
+  margin: 32px 32px;
+}
+
+.mainText {
+  grid-column: 1 / span 4;
+  color: rgba(13, 33, 75, 1);
+  font-weight: 500;
+  font-size: 48px;
+}
+
+.description {
+  grid-column: 1 / span 5;
+  color: rgba(13, 33, 75, 1);
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(2, 96px);
+  grid-column: 1 / span 6;
+  border: 2px solid #5171e0;
+  border-radius: 4px;
+}
+
+.form input:focus {
+  outline: none;
+}
+
+.form select:focus {
+  outline: none;
+}
+
+.form input[type="text"] {
+  grid-column: 1 / span 12;
+  border: none;
+  border-bottom: 1px solid #5171e0;
+  padding: 16px;
+  font-size: 24px;
+}
+
+.form input[type="tel"] {
+  grid-column: 1 / span 12;
+  border: none;
+  border-top: 1px solid #5171e0;
+  padding: 16px;
+  font-size: 24px;
+}
+
+.form select {
+  grid-column: 1 / span 6;
+  border: none;
+  border-top: 2px solid #5171e0;
+  padding: 16px;
+  font-size: 24px;
+  appearance: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+  background-image: none;
+}
+
+.form button {
+  height: 96px;
+  grid-column: 7 / span 6;
+  border: none;
+  border-top: 1px solid #5171e0;
+  padding: 16px;
+  font-size: 24px;
+  cursor: pointer;
+  background-color: #5171e0;
+  color: #fff;
+}
+
+.buttonText {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.arrow {
+  display: flex;
+  justify-content: center;
+}
+
+.buttonMain {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  font-size: 24px;
+  color: #fff;
+}

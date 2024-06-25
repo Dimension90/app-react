@@ -1,6 +1,10 @@
 import React, { useState } from "react";
-import "react-tabs/style/react-tabs.css";
+import { Link } from "react-router-dom";
+import { Splide, SplideSlide } from "@splidejs/react-splide";
+import "@splidejs/react-splide/css";
 
+import "react-tabs/style/react-tabs.css";
+import arrow from "../../assets/img/arrow.svg";
 import styles from "../AdressForm/AdressForm.module.css";
 
 function AdressForm() {
@@ -10,62 +14,78 @@ function AdressForm() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log(`Street: ${street}, House: ${house}, Building: ${building}`);
   };
 
   return (
-    <form onSubmit={handleSubmit} className={styles.form}>
-      <div className={styles.item}>
-        <label htmlFor="street" className={styles.label}>
-          Улица
-        </label>
-        <select
-          id="street"
-          value={street}
-          onChange={(event) => setStreet(event.target.value)}
-          className={styles.input}
-        >
-          <option value="">Выберите улицу</option>
-          <option value="Ленина">Ленина</option>
-          <option value="Кирова">Кирова</option>
-          <option value="Советская">Советская</option>
-        </select>
-      </div>
+    <>
+      <div className={styles.container}>
+        <form onSubmit={handleSubmit} className={styles.form}>
+          <div className={styles.street}>
+            <label htmlFor="street" className={styles.label}></label>
+            <select
+              id="street"
+              value={street}
+              onChange={(event) => setStreet(event.target.value)}
+              className={styles.input}
+            >
+              <option value="selectStreet">улица:</option>
+              <option value="Ленина">улица: Ленина</option>
+              <option value="Проспект">проспект: Ленина</option>
+              <option value="Ленинградский">ленинградский проспект</option>
+            </select>
+          </div>
 
-      <div className={styles.item}>
-        <label htmlFor="house" className={styles.label}>
-          Дом
-        </label>
-        <input
-          type="text"
-          id="house"
-          value={house}
-          onChange={(event) => setHouse(event.target.value)}
-          className={styles.input}
-        />
-      </div>
+          <div className={styles.house}>
+            <label htmlFor="house" className={styles.label}></label>
+            <select
+              id="house"
+              value={house}
+              onChange={(event) => setHouse(event.target.value)}
+              className={styles.input}
+            >
+              <option value="selectHouse">дом:</option>
+              <option value="1">дом: 121/1А</option>
+              <option value="2">дом: 122/2А</option>
+              <option value="3">дом: 123/3А</option>
+            </select>
+          </div>
 
-      <div className={styles.item}>
-        <label htmlFor="building" className={styles.label}>
-          Тип дома
-        </label>
-        <select
-          id="building"
-          value={building}
-          onChange={(event) => setBuilding(event.target.value)}
-          className={styles.input}
-        >
-          <option value="">Выберите тип дома</option>
-          <option value="Жилой дом">Жилой дом</option>
-          <option value="Коттедж">Коттедж</option>
-          <option value="Апартаменты">Апартаменты</option>
-        </select>
-      </div>
+          <div className={styles.building}>
+            <label htmlFor="building" className={styles.label}></label>
+            <select
+              id="building"
+              value={building}
+              onChange={(event) => setBuilding(event.target.value)}
+              className={styles.input}
+            >
+              <option value="">тип дома</option>
+              <option value="многоквартирный">многоквартирный дом</option>
+              <option value="Жилой дом">жилой дом</option>
+              <option value="Коттедж">коттедж</option>
+              <option value="Апартаменты">апартаменты</option>
+            </select>
+          </div>
 
-      <button type="submit" className={styles.button}>
-        Найти провайдера
-      </button>
-    </form>
+          <Link to="/" className={styles.linkButton}>
+            <div className={styles.arrow}>
+              <img src={arrow} />
+            </div>
+            <span>найти провайдеров</span>
+          </Link>
+        </form>
+        <div className={styles.formText}>
+          расскажем о всех <br /> особенностях провайдеров <br /> и тарифов
+        </div>
+        <div className={styles.personInfo}>
+          <Link to="/">условиями</Link>
+        </div>
+        <div className={styles.confirmInfo}>
+          <p>нажимая на поиск я соглашаюсь с обработки персональных данных</p>
+        </div>
+        <div style={{ overflow: "hidden" }}></div>
+        <div className={styles.marqueeText}>быстро_честно_бесплатно</div>
+      </div>
+    </>
   );
 }
 

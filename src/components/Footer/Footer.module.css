@@ -12,48 +12,65 @@
   align-items: center;
   grid-column-start: 1;
   grid-column-end: 8;
+}
+
+.textFooter a {
   font-size: 14px;
   font-weight: 400;
   color: #0d214b;
 }
 
 .imgFooter {
+  display: flex;
+  align-items: center;
   grid-column-start: 8;
 }
-.imgFooter img:first-child {
+
+.imgFooter a {
   margin-right: 27px;
+}
+.imgFooter img:last-child {
+  margin: 0 auto;
 }
 
 .wrapper {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   margin-bottom: 19px;
+  position: relative;
+  overflow-x: hidden;
 }
 
 .logoBackground {
-  width: 166px;
-  height: 100px;
+  width: 260px;
+  height: 140px;
   background-color: #5171e0;
   position: absolute;
-
-  border-radius: 0 10px 10px 0;
+  border-radius: 0 50px 1px 0;
   bottom: 0;
   left: 0;
   z-index: -1;
 }
 
-.logo {
-  grid-column: span 2;
-  font-size: 24px;
-  font-weight: 500;
+.logoBackground:before {
+  content: "";
+  position: absolute;
+  border-bottom: 1px solid #5171e0;
+  width: 100vw;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  left: 0;
 }
 
 .textLogo {
   margin-left: 20px;
-  margin-bottom: 16px;
-}
-
-.logo a {
+  grid-column: 1 / span 2;
+  font-size: 32px;
+  font-weight: 500;
+  position: relative;
+  top: 220px;
+  z-index: 1;
   color: #ffffff;
 }
 
@@ -85,7 +102,6 @@
 
 .phoneSupports a {
   color: #5171e0;
-  text-decoration: none;
 }
 
 .feedback {
@@ -112,38 +128,74 @@
 }
 
 .supportWidth {
+  grid-row: auto;
   grid-column-start: 4;
   grid-column: 4 / span 4;
 }
 
 .buttonSubmit {
   grid-column-start: 10;
+  grid-row: auto;
   grid-column: 10 / span 2;
   font-weight: 500;
   font-size: 24px;
   position: relative;
+  padding-top: 32px;
+  padding-left: 32px;
+  color: #ffffff;
+  display: flex;
+  white-space: nowrap;
 }
 
-.buttonSubmit a {
-  color: #ffffff;
+.arrow {
+  grid-column-start: 12;
+  grid-column: 12 / span 1;
+  width: 32px;
+  height: 32px;
+  position: relative;
+  grid-row: auto;
+  margin-left: 56px;
+  margin-top: 5px;
 }
 
 .buttonSubmit::before {
   content: "";
   position: absolute;
-  width: 360px;
+  width: 370px;
   height: 96px;
   background-color: #5171e0;
   top: 0;
   left: 0;
   z-index: -1;
-  border-radius: 10px 10px 10px 10px;
+  border-radius: 10px 10px 50px 10px;
 }
 
 .reference {
   grid-column-start: 10;
+  height: 96px;
   grid-column: 10 / span 3;
   font-weight: 400;
   font-size: 14px;
+  position: relative;
+  top: -184px;
+  height: 20px;
+  grid-row: auto;
+}
+
+.makeLogo {
+  grid-column-start: 11;
+  grid-column-start: 11 / span 2;
+  width: 32px;
+  height: 32px;
   display: flex;
+  align-items: center;
+  width: 80px;
+  gap: 12px;
+}
+
+.makeLogo a {
+  font-size: 14px;
+  font-weight: 400;
+  white-space: nowrap;
+  grid-template-rows: auto auto;
 }

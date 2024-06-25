@@ -1,0 +1,144 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  row-gap: 32px;
+  grid-column-gap: 32px;
+  margin: 32px 32px;
+}
+
+.backgroundForm {
+  grid-column: 1 / span 12;
+  height: 752px;
+  background-color: rgba(81, 113, 224, 1);
+  border-radius: 50px;
+  margin-top: 20px;
+  z-index: -1;
+  padding: 0 32px;
+}
+
+.textForm {
+  font-weight: 500;
+  margin-top: 88px;
+  margin-left: 48px;
+  font-size: 48px;
+  color: #ffffff;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column: 1 / span 6;
+  border: 1px solid #5171e0;
+  border-radius: 4px 4px 50px 4px;
+  position: relative;
+  bottom: 400px;
+  left: 40px;
+  height: 96px;
+  margin: 0 32px;
+}
+
+.findProviders {
+  grid-column: 4 / span 3;
+  font-size: 24px;
+  font-weight: 500;
+  background: #ffffff;
+  color: #5171e0;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  width: 100%;
+  border-radius: 0 0 50px 0;
+}
+
+.input {
+  width: 600px;
+  padding: 25px;
+  font-size: 14px;
+  border: none;
+  font-size: 24px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  background-color: #5171e0;
+  color: rgba(255, 255, 255, 1);
+  outline: none;
+}
+
+.input::placeholder {
+  color: #fff;
+  opacity: 40%;
+}
+
+.name {
+  height: 96px;
+  grid-column: 1 / span 12;
+  padding: 10px;
+  border: 1px solid #ffffff;
+  border-radius: 8px 8px 0px 0px;
+  border-bottom: none;
+}
+
+.phone {
+  grid-column: 1 / span 6;
+  padding: 10px;
+  border: 1px solid #ffffff;
+  border-right: none;
+  height: 96px;
+}
+
+.findProviders {
+  grid-column: 7 / span 6;
+  padding: 10px;
+  border: 1px solid #ffffff;
+  border-left: none;
+}
+
+.buttonText {
+  grid-column: 4 / span 2;
+
+  font-weight: 500;
+  margin-left: 32px;
+  font-size: 24px;
+  color: #5171e0;
+}
+
+.description {
+  grid-column: 7 / span 5;
+  font-weight: 400;
+  margin-left: 40px;
+  margin-top: 16px;
+  font-size: 14px;
+  color: #ffffff;
+  opacity: 80%;
+}
+
+.description ul {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.description a {
+  color: #ffffff;
+}
+
+.arrowButton {
+  display: flex;
+  align-self: center;
+  margin-left: 47px;
+}
+
+.call {
+  grid-column: 9 / span 3;
+  font-weight: 500;
+  font-size: 24px;
+  position: relative;
+  bottom: 410px;
+  color: #ffffff;
+}
+
+.call a {
+  color: #ffffff;
+}

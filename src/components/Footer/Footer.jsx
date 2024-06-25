@@ -4,19 +4,21 @@ import VKLogo from "../../assets/img/VKLogo.svg";
 import TelegramLogo from "../../assets/img/TelegramLogo.svg";
 import support from "../../assets/img/support.svg";
 import mail from "../../assets/img/mail.svg";
+import arrow from "../../assets/img/arrow.svg";
+import makelogo from "../../assets/img/makelogo.svg";
 
 function Footer() {
   return (
     <div>
       <div className={styles.wrapper}>
+        <Link to="/">
+          <div className={styles.textLogo}>
+            все_ <br />
+            тарифы
+          </div>
+        </Link>
         <div className={styles.logo}>
           <div className={styles.logoBackground}></div>
-          <Link to="/">
-            <div className={styles.textLogo}>
-              все_ <br />
-              тарифы
-            </div>
-          </Link>
         </div>
         <div className={styles.supportWidth}>
           <div className={styles.supportContacts}>
@@ -34,9 +36,12 @@ function Footer() {
             <img src={mail} className={styles.mailLogo} />
           </div>
         </div>
-        <div className={styles.buttonSubmit}>
-          <Link to="/">отправить заявку</Link>
-        </div>
+        <Link to="/" className={styles.buttonSubmit}>
+          отправить заявку
+          <div className={styles.arrow}>
+            <img src={arrow} />
+          </div>
+        </Link>
         <div className={styles.reference}>
           <p>
             Информация на сайте носит справочный характер и не является
@@ -58,6 +63,12 @@ function Footer() {
           <Link>
             <img src={TelegramLogo} />
           </Link>
+        </div>
+        <div className={styles.makeLogo}>
+          <Link to="/">
+            <img src={makelogo} />
+          </Link>
+          <Link to="/">мэйк — создание сайта</Link>
         </div>
       </div>
     </div>

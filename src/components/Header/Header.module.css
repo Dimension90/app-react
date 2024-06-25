@@ -9,6 +9,9 @@
   padding: 10px;
   box-sizing: border-box;
   align-items: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
 }
 
 .logo {
@@ -86,7 +89,7 @@
   height: 100px;
   background-color: #5171e0;
   position: absolute;
-  border-radius: 0 0 10px 0;
+  border-radius: 0 0 50px 0;
   bottom: 0;
   left: 0;
   z-index: -1;
